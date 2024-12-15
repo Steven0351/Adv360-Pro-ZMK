@@ -35,7 +35,7 @@
             label = "eequals";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp EQUAL>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_RGUI)>;
         };
 
         tplus: tplus {
@@ -43,7 +43,7 @@
             label = "tplus";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp PLUS>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_RGUI)>;
         };
 
         dminus: dminus {
@@ -51,7 +51,7 @@
             label = "dminus";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp MINUS>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_RGUI)>;
         };
 
         uunderscore: uunderscore {
@@ -59,7 +59,7 @@
             label = "uunderscore";
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp UNDER>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_LGUI)>;
         };
 
         lbracketbrace: lbracketbrace {
@@ -67,7 +67,7 @@
             label = "lbracketbrace";
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp LBRC>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
             keep-mods = <0>;
         };
 
@@ -76,7 +76,7 @@
             label = "lparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&lbracketbrace>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_LGUI)>;
             keep-mods = <0>;
         };
 
@@ -85,7 +85,7 @@
             label = "rbracketbrace";
             #binding-cells = <0>;
             bindings = <&kp RBKT>, <&kp RBRC>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
             keep-mods = <0>;
         };
 
@@ -94,7 +94,7 @@
             label = "rparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&rbracketbrace>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_LGUI)>;
             keep-mods = <0>;
         };
 
@@ -103,7 +103,7 @@
             label = "dotarrow";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&macro_rarrow>;
-            mods = <(MOD_RGUI|MOD_LGUI)>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
