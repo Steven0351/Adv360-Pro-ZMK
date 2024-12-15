@@ -74,7 +74,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "lbracketbrace";
             #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp LBRK>;
+            bindings = <&kp LBRC>, <&kp LBKT>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "rbracketbrace";
             #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp RBRK>;
+            bindings = <&kp RBRC>, <&kp RBKT>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
