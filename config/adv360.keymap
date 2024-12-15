@@ -52,7 +52,7 @@
     combo_rightarrow {
       timeout-ms = <50>;
       key-positions = <LEFT_CMD 57>;
-      bindings = <&kp MINUS, &kp GT>;
+      bindings = <&kp MINUS &kp GT>;
     };
     combo_leftbracket {
       timeout-ms = <50>;
