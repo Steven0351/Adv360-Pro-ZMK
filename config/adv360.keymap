@@ -78,7 +78,7 @@
 
         combo_dash {
             timeout-ms = <200>;
-            key-positions = <35 31>;
+            key-positions = <38 31>;
             bindings = <&kp MINUS>;
         };
     };
