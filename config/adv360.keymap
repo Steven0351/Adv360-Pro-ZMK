@@ -49,7 +49,7 @@
         combo_rightarrow {
             timeout-ms = <200>;
             key-positions = <57 35>;
-            bindings = <&kp MINUS &kp GT>;
+            bindings = <&macro_rarrow>;
         };
 
         combo_leftbracket {
@@ -66,14 +66,20 @@
 
         combo_leftbrace {
             timeout-ms = <200>;
-            key-positions = <46 11 35>;
+            key-positions = <35 46 11>;
             bindings = <&kp LEFT_BRACE>;
         };
 
         combo_rightbrace {
             timeout-ms = <200>;
-            key-positions = <46 12 35>;
+            key-positions = <35 46 12>;
             bindings = <&kp RIGHT_BRACE>;
+        };
+
+        combo_dash {
+            timeout-ms = <200>;
+            key-positions = <35 31>;
+            bindings = <&kp MINUS>;
         };
     };
 
