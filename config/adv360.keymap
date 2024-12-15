@@ -18,8 +18,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define LEFT_CMD 34
-#define RIGHT_CMD 37
+#define LEFT_CMD 35
+#define RIGHT_CMD 38
 
 / {
   behaviors {
