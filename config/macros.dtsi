@@ -39,4 +39,4 @@ macro_rarrow: macro_rarrow{
   label = "macro_rarrow";
   #binding-cells = <0>;
   bindings = <&kp MINUS>, <&kp GT>;
-}
+};
