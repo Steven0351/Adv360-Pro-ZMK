@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&rbracketbrace>;
             mods = <(MOD_LGUI)>;
-            keep-mods = <0>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         dotarrow: dotarrow {
