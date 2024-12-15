@@ -62,6 +62,14 @@
             mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
+        lbracketbrace: lbracketbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lbracketbrace";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
         lparenbracket: lparenbracket {
             compatible = "zmk,behavior-mod-morph";
             label = "lparenbracket";
@@ -70,11 +78,11 @@
             mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
-        lbracketbrace: lbracketbrace {
+        rbracketbrace: rbracketbrace {
             compatible = "zmk,behavior-mod-morph";
-            label = "lbracketbrace";
+            label = "rbracketbrace";
             #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp LBKT>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
@@ -84,14 +92,6 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&rbracketbrace>;
             mods = <(MOD_RGUI|MOD_LGUI)>;
-        };
-
-        rbracketbrace: rbracketbrace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "rbracketbrace";
-            #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp RBKT>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
         dotarrow: dotarrow {
