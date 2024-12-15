@@ -18,6 +18,9 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define LEFT_CMD 34
+#define RIGHT_CMD 37
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -31,6 +34,45 @@
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
+    };
+  };
+
+  combos {
+    compatible = "zmk,combos";
+    combo_underscore {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 23>;
+      bindings = <&kp UNDER>;
+    };
+    combo_equal {
+      timeout-ms = <50>;
+      key-positions = <RIGHT_CMD 17>;
+      bindings = <&kp EQUAL>;
+    };
+    combo_rightarrow {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 57>;
+      bindings = <&kp MINUS, &kp GT>;
+    };
+    combo_leftbracket {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 11>;
+      bindings = <&kp LEFT_BRACKET>;
+    };
+    combo_rightbracket {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 12>;
+      bindings = <&kp RIGHT_BRACKET>;
+    };
+    combo_leftbrace {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 46 11>;
+      bindings = <&kp LEFT_BRACE>;
+    };
+    combo_rightbrace {
+      timeout-ms = <50>;
+      key-positions = <LEFT_CMD 46 12>;
+      bindings = <&kp RIGHT_BRACE>;
     };
   };
 
