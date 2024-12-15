@@ -37,52 +37,70 @@
             bindings = <&kp E>, <&kp EQUAL>;
             mods = <(MOD_RGUI|MOD_LGUI)>;
         };
-    };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_underscore {
-            timeout-ms = <200>;
-            key-positions = <23 35>;
-            bindings = <&kp UNDER>;
+        tplus: tplus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "tplus";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp PLUS>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
-        combo_rightarrow {
-            timeout-ms = <200>;
-            key-positions = <57 35>;
-            bindings = <&macro_rarrow>;
+        dminus: dminus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "dminus";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp MINUS>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
-        combo_leftbracket {
-            timeout-ms = <200>;
-            key-positions = <11 35>;
-            bindings = <&kp LEFT_BRACKET>;
+        uunderscore: uunderscore {
+            compatible = "zmk,behavior-mod-morph";
+            label = "uunderscore";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp UNDER>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
-        combo_rightbracket {
-            timeout-ms = <200>;
-            key-positions = <12 35>;
-            bindings = <&kp RIGHT_BRACKET>;
+        lparenbracket: lparenbracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lparenbracket";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&lbracketbrace>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
-        combo_leftbrace {
-            timeout-ms = <200>;
-            key-positions = <35 46 11>;
-            bindings = <&kp LEFT_BRACE>;
+        lbracketbrace: lbracketbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lbracketbrace";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
 
-        combo_rightbrace {
-            timeout-ms = <200>;
-            key-positions = <35 46 12>;
-            bindings = <&kp RIGHT_BRACE>;
+        rparenbracket: rparenbracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "rparenbracket";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&rbracketbrace>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
-        combo_dash {
-            timeout-ms = <200>;
-            key-positions = <38 31>;
-            bindings = <&kp MINUS>;
+        rbracketbrace: rbracketbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "rbracketbrace";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
         };
+
+        dotarrow: dotarrow {
+            compatible = "zmk,behavior-mod-morph";
+            label = "dotarrow";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&macro_rarrow>;
+            mods = <(MOD_RGUI|MOD_LGUI)>;
+        }
     };
 
     keymap {
@@ -90,11 +108,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &eequals  &kp R      &kp T   &none                                                   &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                       &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7         &kp N8     &lparenbracket  &rparenbracket  &kp MINUS
+&kp TAB    &kp Q      &kp W     &eequals  &kp R      &tplus  &none                                                   &none      &kp Y   &uunderscore   &kp I      &kp O           &kp P           &kp BSLH
+&kp ESC    &kp A      &kp S     &dminus   &kp F      &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H   &kp J          &kp K      &kp L           &kp SEMI        &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                       &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA  &dotarrow       &kp FSLH        &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN   &kp LBKT        &kp RBKT        &mo 2
             >;
         };
 
