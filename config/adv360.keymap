@@ -62,19 +62,11 @@
             mods = <(MOD_LGUI)>;
         };
 
-        lbracketbrace: lbracketbrace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "lbracketbrace";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp LBRC>;
-            mods = <(MOD_LSFT)>;
-        };
-
         lparenbracket: lparenbracket {
             compatible = "zmk,behavior-mod-morph";
             label = "lparenbracket";
             #binding-cells = <0>;
-            bindings = <&kp N9>, <&lbracketbrace>;
+            bindings = <&kp N9>, <&kp LBKT>;
             mods = <(MOD_LGUI)>;
         };
 
