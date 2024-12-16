@@ -68,7 +68,6 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp LBRC>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
         };
 
         lparenbracket: lparenbracket {
@@ -77,25 +76,14 @@
             #binding-cells = <0>;
             bindings = <&kp N9>, <&lbracketbrace>;
             mods = <(MOD_LGUI)>;
-            keep-mods = <0>;
-        };
-
-        rbracketbrace: rbracketbrace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "rbracketbrace";
-            #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp RBRC>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
         };
 
         rparenbracket: rparenbracket {
             compatible = "zmk,behavior-mod-morph";
             label = "rparenbracket";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&rbracketbrace>;
+            bindings = <&kp N0>, <&kp RBKT>;
             mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
         };
 
         dotarrow: dotarrow {
