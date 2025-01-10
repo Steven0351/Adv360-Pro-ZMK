@@ -24,8 +24,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <275>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -85,6 +85,30 @@
             bindings = <&kp DOT>, <&macro_rarrow>;
             mods = <(MOD_LGUI)>;
         };
+
+        yparen: yparen {
+          compatible = "zmk,behavior-mod-morph";
+          label = "yparen";
+          #binding-cells = <0>;
+          bindings = <&kp Y>, <&kp LPAR>;
+          mods = <(MOD_LGUI)>;
+        };
+
+        ibracket: ibracket {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ibracket";
+          #binding-cells = <0>;
+          bindings = <&kp I>, <&kp LBKT>;
+          mods = <(MOD_LGUI)>;
+        };
+
+        obrace: obrace {
+          compatible = "zmk,behavior-mod-morph";
+          label = "obrace";
+          #binding-cells = <0>;
+          bindings = <&kp O>, <&kp LBRC>;
+          mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -92,11 +116,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2     &kp N3    &kp N4      &kp N5  &tog 1                                                  &mo 3      &kp N6  &kp N7         &kp N8     &lparenbracket  &rparenbracket  &kp MINUS
-&kp TAB    &kp Q       &kp W      &eequals  &kp R       &tplus  &none                                                   &none      &kp Y   &uunderscore   &kp I      &kp O           &kp P           &kp BSLH
-&kp ESC    &hm LCTL A  &hm LALT S &dminus   &hm LGUI F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H   &hm RGUI J     &kp K      &hm RALT L      &hm RCTRL SEMI  &kp SQT
-&kp LSHFT  &kp Z       &kp X      &kp C     &kp V       &kp B                       &kp HOME      &kp PG_UP                        &kp N   &kp M          &kp COMMA  &dotarrow       &kp FSLH        &kp RSHFT
-&mo 2      &kp GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT           &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP         &kp DOWN   &kp LBKT        &kp RBKT        &mo 2
+&kp EQUAL  &kp N1      &kp N2     &kp N3    &kp N4      &kp N5  &tog 1                                                  &mo 3      &kp N6    &kp N7         &kp N8     &kp N9        &kp N0          &kp MINUS
+&kp TAB    &kp Q       &kp W      &eequals  &kp R       &tplus  &none                                                   &none      &yparen   &uunderscore   &ibracket  &obrace       &kp P           &kp BSLH
+&kp ESC    &hm LCTL A  &hm LALT S &dminus   &hm LGUI F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H     &hm RGUI J     &kp K      &hm RALT L    &hm RCTRL SEMI  &kp SQT
+&kp LSHFT  &kp Z       &kp X      &kp C     &kp V       &kp B                       &kp HOME      &kp PG_UP                        &kp N     &kp M          &kp COMMA  &dotarrow     &kp FSLH        &kp RSHFT
+&mo 2      &kp GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT           &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE            &kp UP         &kp DOWN   &kp LBKT      &kp RBKT        &mo 2
             >;
         };
 
