@@ -35,7 +35,7 @@
             label = "eequals";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp EQUAL>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
         tplus: tplus {
@@ -43,7 +43,7 @@
             label = "tplus";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp PLUS>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
         dminus: dminus {
@@ -51,7 +51,7 @@
             label = "dminus";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp MINUS>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
         uunderscore: uunderscore {
@@ -59,7 +59,7 @@
             label = "uunderscore";
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp UNDER>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         lparenbracket: lparenbracket {
@@ -67,7 +67,7 @@
             label = "lparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp LBKT>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         rparenbracket: rparenbracket {
@@ -75,7 +75,7 @@
             label = "rparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp RBKT>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         dotarrow: dotarrow {
@@ -83,7 +83,7 @@
             label = "dotarrow";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&macro_rarrow>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         yparen: yparen {
@@ -91,7 +91,7 @@
           label = "yparen";
           #binding-cells = <0>;
           bindings = <&kp Y>, <&kp LPAR>;
-          mods = <(MOD_LGUI)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         ibracket: ibracket {
@@ -99,7 +99,7 @@
           label = "ibracket";
           #binding-cells = <0>;
           bindings = <&kp I>, <&kp LBKT>;
-          mods = <(MOD_LGUI)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         obrace: obrace {
@@ -107,7 +107,7 @@
           label = "obrace";
           #binding-cells = <0>;
           bindings = <&kp O>, <&kp LBRC>;
-          mods = <(MOD_LGUI)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
     };
 
