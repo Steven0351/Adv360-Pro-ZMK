@@ -35,7 +35,7 @@
             label = "eequals";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp EQUAL>;
-            mods = <(MOD_RALT | MOD_LALT)>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
         tplus: tplus {
@@ -43,15 +43,15 @@
             label = "tplus";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp PLUS>;
-            mods = <(MOD_RALT | MOD_LALT)>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
-        mminus: mminus {
+        dminus: dminus {
             compatible = "zmk,behavior-mod-morph";
             label = "dminus";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&kp MINUS>;
-            mods = <(MOD_RALT | MOD_LALT)>;
+            bindings = <&kp D>, <&kp MINUS>;
+            mods = <(MOD_RGUI | MOD_LGUI)>;
         };
 
         uunderscore: uunderscore {
@@ -59,7 +59,7 @@
             label = "uunderscore";
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp UNDER>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         lparenbracket: lparenbracket {
@@ -67,7 +67,7 @@
             label = "lparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp LBKT>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         rparenbracket: rparenbracket {
@@ -75,7 +75,7 @@
             label = "rparenbracket";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp RBKT>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         dotarrow: dotarrow {
@@ -83,7 +83,7 @@
             label = "dotarrow";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&macro_rarrow>;
-            mods = <(MOD_LALT | MOD_RALT)>;
+            mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         yparen: yparen {
@@ -91,7 +91,7 @@
           label = "yparen";
           #binding-cells = <0>;
           bindings = <&kp Y>, <&kp LPAR>;
-          mods = <(MOD_LALT | MOD_RALT)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         ibracket: ibracket {
@@ -99,7 +99,7 @@
           label = "ibracket";
           #binding-cells = <0>;
           bindings = <&kp I>, <&kp LBKT>;
-          mods = <(MOD_LALT | MOD_RALT)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
 
         obrace: obrace {
@@ -107,7 +107,7 @@
           label = "obrace";
           #binding-cells = <0>;
           bindings = <&kp O>, <&kp LBRC>;
-          mods = <(MOD_LALT | MOD_RALT)>;
+          mods = <(MOD_LGUI | MOD_RGUI)>;
         };
     };
 
@@ -116,11 +116,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2       &kp N3       &kp N4      &kp N5  &tog 1                                                  &mo 3      &kp N6    &kp N7         &kp N8       &kp N9        &kp N0          &kp MINUS
-&kp TAB    &kp Q       &kp W        &eequals     &kp R       &tplus  &none                                                   &none      &yparen   &uunderscore   &ibracket    &kp O         &kp P           &kp BSLH
-&kp ESC    &hm LCTL A  &hm LCTRL S  &hm LGUI D   &hm LALT F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H     &hm RALT J     &kp RGUI K   &hm RCTRL L   &hm RCTRL SEMI  &kp SQT
-&kp LSHFT  &kp Z       &kp X        &kp C        &kp V       &kp B                       &kp LSHFT     &kp RSHFT                        &kp N     &mminus        &kp COMMA    &dotarrow     &kp FSLH        &kp RSHFT
-&mo 2      &kp GRAVE   &kp CAPS     &kp LEFT     &kp RIGHT           &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE            &kp UP         &kp DOWN     &kp LBKT      &kp RBKT        &mo 2
+&kp EQUAL  &kp N1      &kp N2     &kp N3    &kp N4      &kp N5  &tog 1                                                  &mo 3      &kp N6    &kp N7         &kp N8     &kp N9        &kp N0          &kp MINUS
+&kp TAB    &kp Q       &kp W      &eequals  &kp R       &tplus  &none                                                   &none      &yparen   &uunderscore   &ibracket  &kp O         &kp P           &kp BSLH
+&kp ESC    &hm LCTL A  &hm LALT S &dminus   &hm LGUI F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H     &hm RGUI J     &kp K      &hm RALT L    &hm RCTRL SEMI  &kp SQT
+&kp LSHFT  &kp Z       &kp X      &kp C     &kp V       &kp B                       &kp LSHFT     &kp RSHFT                        &kp N     &kp M          &kp COMMA  &dotarrow     &kp FSLH        &kp RSHFT
+&mo 2      &kp GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT           &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE            &kp UP         &kp DOWN   &kp LBKT      &kp RBKT        &mo 2
             >;
         };
 
