@@ -46,11 +46,11 @@
             mods = <(MOD_RALT | MOD_LALT)>;
         };
 
-        mminus: mminus {
+        dminus: dminus {
             compatible = "zmk,behavior-mod-morph";
             label = "dminus";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&kp MINUS>;
+            bindings = <&kp D>, <&kp MINUS>;
             mods = <(MOD_RALT | MOD_LALT)>;
         };
 
@@ -121,9 +121,9 @@
 //14       15          16           17           18          19      20                                                      21         22        23             24           25            26              27
 &kp TAB    &kp Q       &kp W        &eequals     &kp R       &tplus  &none                                                   &none      &yparen   &uunderscore   &ibracket    &kp O         &kp P           &kp BSLH
 //28       29          30           31           32          33      34        35        36            37         38         39         40        41             42           43            44              45
-&kp ESC    &hm LCTL A  &kp S        &hm LGUI D   &hm LALT F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H     &hm RALT J     &hm RGUI K   &kp L         &hm RCTRL SEMI  &kp SQT
+&kp ESC    &hm LCTL A  &hm LALT S   &ddminus     &hm LGUI F  &kp G   &none     &kp LGUI  &kp LALT      &kp RCTRL  &kp RGUI   &none      &kp H     &hm RGUI J     &kp K        &hm RALT L    &hm RCTRL SEMI  &kp SQT
 //46       47          48           49           50          51                          52            53                               54        55             56           57            58              59
-&kp LSHFT  &kp Z       &kp X        &kp C        &kp V       &kp B                       &kp LSHFT     &kp RSHFT                        &kp N     &mminus        &kp COMMA    &dotarrow     &kp FSLH        &kp RSHFT
+&kp LSHFT  &kp Z       &kp X        &kp C        &kp V       &kp B                       &kp LSHFT     &kp RSHFT                        &kp N     &kp M          &kp COMMA    &dotarrow     &kp FSLH        &kp RSHFT
 //60       61          62           63           64                  65        66        67            68         69         70                   71             72           73            74              75
 &mo 2      &kp GRAVE   &kp CAPS     &kp LEFT     &kp RIGHT           &kp BSPC  &kp DEL   &kp END       &kp PG_DN  &kp ENTER  &kp SPACE            &kp UP         &kp DOWN     &kp LBKT      &kp RBKT        &mo 2
             >;
