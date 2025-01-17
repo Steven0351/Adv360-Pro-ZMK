@@ -160,7 +160,7 @@
 //46       47          48           49           50          51                          52            53                               54        55             56           57            58              59
 &kp LHYPER &kp Z       &kp X        &kp C        &kp V       &kp B                       &kp LSHFT     &kp RSHFT                        &kp N     &kp M          &kp COMMA    &dotarrow     &kp FSLH        &kp RHYPER
 //60       61          62           63           64                  65        66        67            68         69         70                   71             72           73            74              75
-&kp LMEH   &kp GRAVE   &kp CAPS     &kp LEFT     &kp RIGHT           &kp BSPC  &mo 5     &mo 4         &kp PG_DN  &kp ENTER  &kp SPACE            &kp UP         &kp DOWN     &kp LBKT      &kp RBKT        &kp RMEH
+&kp LMEH   &kp GRAVE   &kp CAPS     &kp LEFT     &kp RIGHT           &kp BSPC  &mo 5     &mo 4         &mo 6      &kp ENTER  &kp SPACE            &kp UP         &kp DOWN     &kp LBKT      &kp RBKT        &kp RMEH
             >;
         };
 
