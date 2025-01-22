@@ -111,7 +111,7 @@
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <RT2 RT3>;
             bindings = <&kp EXCLAMATION>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         combo_amp {
@@ -119,7 +119,7 @@
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <RT3 RT4>;
             bindings = <&kp AMPERSAND>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         combo_ast {
@@ -127,7 +127,7 @@
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <RT4 RT5>;
             bindings = <&kp STAR>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         combo_at {
@@ -135,7 +135,7 @@
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <RM2 RM3>;
             bindings = <&kp AT>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         combo_arrow {
@@ -203,14 +203,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <LKEYS THUMBS>;
             hold-trigger-on-release;
-        };
-
-        dotarrow: dotarrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "dotarrow";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&rarrow>;
-            mods = <(MOD_LALT | MOD_RALT)>;
         };
 
         shftcaps: shftcaps {
