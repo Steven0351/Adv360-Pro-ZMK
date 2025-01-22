@@ -81,7 +81,6 @@
             layers = <0 1 2>;
         };
 
-
         combo_dollarsign {
             timeout-ms = <COMBO_H_TIMEOUT>;
             require-prior-idle-ms = <COMBO_H_IDLE>;
@@ -209,7 +208,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPS>;
+            bindings = <&mt LSHFT &caps_word>, <&kp CAPS>;
         };
     };
 
@@ -219,11 +218,11 @@
         layer_qwerty {
             bindings = <
 //0        1             2            3            4             5       6                                                       7          8         9              10           11            12              13
-&none      &none         &none        &none       &none         &none   &none                                                   &mo 4      &none     &none          &none        &none         &none           &none
-//14       15            16           17          18            19      20                                                      21         22        23             24           25            26              27
-&kp TAB    &kp Q         &kp W        &kp E       &kp R         &kp T   &none                                                   &to 1      &kp Y     &kp U          &kp I        &kp O         &kp P        &kp BSLH
-//28       29            30           31          32            33      34        35        36            37         38         39         40        41             42           43            44              45
-&kp ESC    &hml LCTL A   &hml LALT S  &kp D       &hml LGUI F   &kp G   &none     &mo 1      &kp LHYPER    &kp RCTRL  &kp RGUI   &none      &kp H     &hmr RGUI J    &kp K        &hmr RALT L   &hmr RCTRL SEMI    &kp SQT
+&none      &none         &none        &none       &none         &none   &none                                                    &mo 4      &none     &none          &none        &none         &none           &none
+//14       15            16           17          18            19      20                                                       21         22        23             24           25            26              27
+&kp TAB    &kp Q         &kp W        &kp E       &kp R         &kp T   &none                                                    &to 1      &kp Y     &kp U          &kp I        &kp O         &kp P           &kp BSLH
+//28       29            30           31          32            33      34        35        36             37         38         39         40        41             42           43            44              45
+&kp ESC    &hml LCTL A   &hml LALT S  &kp D       &hml LGUI F   &kp G   &none     &mo 2      &mo 3         &kp RCTRL  &kp RGUI   &none      &kp H     &hmr RGUI J    &kp K        &hmr RALT L   &hmr RCTRL SEMI &kp SQT
 //46       47            48           49          50            51                           52            53                               54        55             56           57            58              59
 &kp GRAVE  &kp Z         &kp X        &kp C       &kp V         &kp B                        &kp LMEH      &kp RSHFT                        &kp N     &kp M          &kp COMMA    &kp DOT       &kp FSLH        &to 2
 //60       61            62           63          64                    65        66         67            68         69         70                   71             72           73            74              75
@@ -234,11 +233,11 @@
         // 1
         layer_colemak {
             bindings = <
-//0        1             2            3            4             5       6                                                       7          8         9              10           11            12              13
-&none      &none         &none        &none       &none         &none   &none                                                   &mo 4      &none     &none          &none        &none         &none           &none
-//14       15            16           17          18            19      20                                                      21         22        23             24           25            26              27
-&kp TAB    &kp Q         &kp W        &kp F       &kp P         &kp B   &none                                                   &to 0      &kp J     &kp L          &kp U        &kp Y         &kp SEMI        &kp BSLH
-//28       29            30           31          32            33      34        35        36            37         38         39         40        41             42           43            44              45
+//0        1             2            3           4             5       6                                                        7          8         9              10           11            12              13
+&none      &none         &none        &none       &none         &none   &none                                                    &mo 4      &none     &none          &none        &none         &none           &none
+//14       15            16           17          18            19      20                                                       21         22        23             24           25            26              27
+&kp TAB    &kp Q         &kp W        &kp F       &kp P         &kp B   &none                                                    &to 0      &kp J     &kp L          &kp U        &kp Y         &kp SEMI        &kp BSLH
+//28       29            30           31          32            33      34        35        36            37         38          39         40        41             42           43            44              45
 &kp ESC    &hml LCTL A   &hml LALT R  &kp S       &hml LGUI T   &kp G   &none     &mo 1      &kp LHYPER    &kp RCTRL  &kp RGUI   &none      &kp M     &hmr RGUI N    &kp E        &hmr RALT I   &hmr RCTRL O    &kp SQT
 //46       47            48           49          50            51                           52            53                               54        55             56           57            58              59
 &kp GRAVE  &kp Z         &kp X        &kp C       &kp D         &kp V                        &kp LMEH      &kp RSHFT                        &kp K     &kp H          &kp COMMA    &kp DOT       &kp FSLH        &to 2
@@ -255,7 +254,7 @@
 &trans     &trans      &trans    &trans    &trans     &trans  &trans                                          &trans      &trans    &kp KP_N7     &kp KP_N8      &kp KP_N9       &trans       &trans
 &trans     &trans      &trans    &trans    &trans     &trans  &trans     &trans  &trans      &trans  &trans   &trans      &trans    &kp KP_N4     &kp KP_N5      &kp KP_N6       &trans       &trans
 &trans     &trans      &trans    &trans    &trans     &trans                     &trans      &trans                       &trans    &kp KP_N1     &kp KP_N2      &kp KP_N3       &trans       &to 3
-&trans     &trans      &trans    &trans    &trans             &trans     &trans  &to 0       &trans   &to 0   &kp KP_N0             &trans        &trans         &kp KP_DOT      &trans       &trans
+&trans     &trans      &trans    &trans    &trans             &trans     &trans  &to 0       &to 0   &trans   &kp KP_N0             &trans        &trans         &kp KP_DOT      &trans       &trans
             >;
         };
 
@@ -265,8 +264,8 @@
 &trans     &trans    &trans     &trans     &trans     &trans      &trans                                         &trans  &trans    &trans     &trans   &trans     &trans     &trans
 &trans     &trans    &trans     &trans     &trans     &trans      &trans                                         &trans  &trans    &trans     &trans   &trans     &trans     &trans
 &trans     &trans    &trans     &trans     &trans     &trans      &trans    &trans  &trans       &trans  &trans  &trans  &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &trans     &trans
-&trans     &trans    &trans     &trans     &trans     &trans                     &trans       &trans                  &trans    &trans     &trans   &trans     &trans     &to 0
-&trans     &trans    &trans     &trans     &trans                 &trans    &trans  &to 0        &trans  &to 2   &trans            &trans     &trans   &trans     &trans     &trans
+&trans     &trans    &trans     &trans     &trans     &trans                        &trans       &trans                  &trans    &trans     &trans   &trans     &trans     &to 0
+&trans     &trans    &trans     &trans     &trans                 &trans    &trans  &to 0        &to 2  &trans   &trans            &trans     &trans   &trans     &trans     &trans
             >;
         };
 
