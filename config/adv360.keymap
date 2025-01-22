@@ -49,7 +49,7 @@
             layers = <0 1 2>;
         };
 
-        combo_parens {
+        combo_brackets {
             timeout-ms = <COMBO_H_TIMEOUT>;
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <LT1 LT2>;
