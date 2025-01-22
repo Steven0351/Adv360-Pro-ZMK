@@ -142,7 +142,7 @@
             timeout-ms = <COMBO_H_TIMEOUT>;
             require-prior-idle-ms = <COMBO_H_IDLE>;
             key-positions = <RB2 RB3>;
-            bindings = <&dotarrow>;
+            bindings = <&kp MINUS>, <&kp GT>;
             layers = <0>;
         };
     };
