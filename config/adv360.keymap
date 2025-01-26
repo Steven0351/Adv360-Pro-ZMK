@@ -222,7 +222,7 @@
 //14       15            16           17          18            19      20                                                       21         22        23             24           25            26              27
 &kp TAB    &kp Q         &kp W        &kp F       &kp P         &kp B   &none                                                    &to 1      &kp J     &kp L          &kp U        &kp Y         &kp SEMI        &kp BSLH
 //28       29            30           31          32            33      34        35        36            37         38          39         40        41             42           43            44              45
-&kp ESC    &hml LCTL A   &hml LALT R  &kp S       &hml LGUI T   &kp G   &none     &mo 1      &kp LHYPER    &kp RCTRL  &kp RGUI   &none      &kp M     &hmr RGUI N    &kp E        &hmr RALT I   &hmr RCTRL O    &kp SQT
+&kp ESC    &hml LCTL A   &hml LALT R  &kp S       &hml LGUI T   &kp G   &none     &mo 2      &mo 3         &kp RCTRL  &kp RGUI   &none      &kp M     &hmr RGUI N    &kp E        &hmr RALT I   &hmr RCTRL O    &kp SQT
 //46       47            48           49          50            51                           52            53                               54        55             56           57            58              59
 &kp GRAVE  &kp Z         &kp X        &kp C       &kp D         &kp V                        &kp LMEH      &kp RSHFT                        &kp K     &kp H          &kp COMMA    &kp DOT       &kp FSLH        &to 2
 //60       61            62           63          64                    65        66         67            68         69         70                   71             72           73            74              75
